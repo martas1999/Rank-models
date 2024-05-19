@@ -1,0 +1,11 @@
+In order to reproduce the results of the analysis of Formula 2 races: 
+
+1)  open the  script “1.prep_data_f2.R”  to retrieve the data about the finishing positions of Formula 2 races from the webpage https://fiaresultsandstatistics.motorsportstats.com/results. 
+Race results are tidied up by removing the drivers who could not finish the race for any kind of reasons and the proportion of outperformed competitors is computed. 
+The data frame containing all the tidy results from seasons 2017-2023 can be found in the f2_data folder under the name “f2_data_tot.rds”
+
+2) open the script “2.models_run_f2.R” to apply each model to the Formula 2 datasets and retrieve the ability estimates  for those drivers who compete at least 30 times.  
+Estimated models can be found in “f2_sampling” folder.
+
+3) open the script “3.graphs_f2.R” to produce Figure 6, which compares estimated abilities for the different models, and Table 3, which compared the estimated rankings of 
+competitors by the different models.
