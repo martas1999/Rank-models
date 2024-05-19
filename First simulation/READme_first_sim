@@ -1,0 +1,15 @@
+In order to reproduce the results of the first simulation (a thousand of iterations for each simulated condition) , focused on the MSE: 
+
+1)  open the  script “1.simulate_thousand_it.R”  to simulate the finishing positions of competitors in different games, 
+varying the number of games, the number of entrants, the number of potential competitors and the competitiveness levels.  
+The functions in this script don’t save the simulated datasets and neither the estimated models. The reason why these files
+were not saved is related to memory constraints (more than 100 GB) and  the slowdowns caused to the server used to run the analyses. 
+In order to obtain the dataset is therefore necessary to run again the function used to simulate the data. 
+The script just saves the MSE achieved by the different models in each condition. The related grid is attached in the folder, 
+under the name “grid_results_def_final.rds”. 
+
+2) open the script “2.graphs_thousand_it .R” to analyse the failures of the simulation algorithm and to analyse in which conditions
+models did not reach convergence.  Using the script is then possible to reproduce Figure1 (how MSE for the different models varied 
+for different competitiveness levels and number of entrants) , Figure 2 (how MSE for the different models varied for differ 
+competitiveness levels and number of games) and Figure 3 (how MSE for the different models varied for different combination of number 
+of entrants, number of total competitors and different densities  in the data. 
