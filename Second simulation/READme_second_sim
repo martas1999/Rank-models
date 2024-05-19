@@ -1,0 +1,22 @@
+In order to reproduce the results of the second simulation (a hundred iterations for each simulated condition) , 
+                                                            focused on the Kendall distance metric: 
+
+1)  open the  script “1.simulate_data_hundred_it.R”  to simulate the finishing positions of competitors in different 
+games, varying the number of games, the number of entrants, the number of potential competitors and the competitiveness 
+levels. The simulated dataset can be found in “sim_df” folder while the corresponding vector of true abilities used to
+simulate the game results can be found in “sim_abilities” folder. In the same script the four models are applied to each 
+generated dataset and the estimated models can be found in “sim_output” folder. 
+N.B: each name files is created by combining together the factors level used to generate the specific dataset.
+For example, file name “50_15_2_0.1_1_df” represents the dataset generated from scenario with 50 games, 15 total competitors,
+2 entrants, sigma = 0.1 (meaning high competitiveness) and 1st iteration. “50_15_2_0.1_1_ab” is the corresponding vector 
+of true abilities of competitors and “50_15_2_0.1_1_beta0/beta1/beta2/rol” indicates the corresponding estimated model.
+
+2) open the script “2.results_elaboration_hundred_it.R” to retrieve for each condition from the estimated models, 
+the vector of estimated abilities from each model and the corresponding rankings of competitors. 
+These are used to compute the normalised Kendall distances. The grid where the Kendall distances are stored can be
+found in the object called “grid_kendall_def.rds”, present in this folder.
+
+3) open the script “3.graphs_hundred_it.R” to reproduce Figure 4, which compares the  normalised Kendall distances 
+of the different models by different competitiveness levels and number of entrants;   and reproduce  Figure 5, 
+which compares the  normalised Kendall distances of the different models by different competitiveness levels and 
+number of games.
