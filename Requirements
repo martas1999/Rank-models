@@ -1,8 +1,7 @@
-The analysis was conducted using  
-R Core Team (2023). _R: A Language and Environment for Statistical Computing_. R Foundation for Statistical Computing, .version 4.3.2 (2023-10-31) 
-  on a  x86_64-apple-darwin20 (64-bit) machine. To run the bayesian models we made use of CmdStan (version 2.33.1) the command-line interface to the Stan statistical modeling language.
+The analysis was conducted using  R version 4.3.2 (R Core Team (2023) on a  x86_64-apple-darwin20 (64-bit) machine.
+To run the bayesian models we made use of CmdStan (version 2.33.1), the command-line interface to the Stan statistical modeling language.
 
-The following  R packages were used:
+The following R packages were used:
 	⁃	"cmdstanr”       version     0.7.0
 	⁃	"tidyverse"      version     2.0.0
 	⁃	"pbapply"        version     1.7.2 
