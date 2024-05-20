@@ -6,7 +6,11 @@ games, varying the number of games, the number of entrants, the number of potent
 levels. The simulated dataset can be found in “sim_df” folder while the corresponding vector of true abilities used to
 simulate the game results can be found in “sim_abilities” folder. In the same script the four models are applied to each 
 generated dataset and the estimated models can be found in “sim_output” folder. 
-N.B: each name files is created by combining together the factors level used to generate the specific dataset.
+
+N.B. The files "sim_df", "sim_abilities" and "sim_output" are not attached here due to memory constraints.
+click here https://filesender.surf.nl/?s=download&token=a5d2275f-4578-4ac8-a7b9-df5b8f347b68 to download the zip folders contaning these data. 
+
+N.B.: each name files is created by combining together the factors level used to generate the specific dataset.
 For example, file name “50_15_2_0.1_1_df” represents the dataset generated from scenario with 50 games, 15 total competitors,
 2 entrants, sigma = 0.1 (meaning high competitiveness) and 1st iteration. “50_15_2_0.1_1_ab” is the corresponding vector 
 of true abilities of competitors and “50_15_2_0.1_1_beta0/beta1/beta2/rol” indicates the corresponding estimated model.
